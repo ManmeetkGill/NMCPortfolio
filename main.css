@@ -1,0 +1,27 @@
+html {
+}
+#homeLine {
+  height: 5px;
+  width: 90%;
+  background-color: #021452;
+  border-radius: 5px;
+  margin-top: 80px;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  max-width: 80%;
+}
+
+#nmImage {
+  flex-basis: 40%;
+}
+
+.introText {
+  font-size: 40px;
+}
