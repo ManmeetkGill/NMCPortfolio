@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
 html {
 }
-#homeLine {
+#topLine {
   height: 5px;
   width: 90%;
   background-color: #021452;
@@ -8,20 +10,65 @@ html {
   margin-top: 80px;
 }
 
-#container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+#bottomLine {
+  height: 5px;
+  width: 90%;
+  background-color: #021452;
+  border-radius: 5px;
+  margin-top: 15px;
 }
 
-img {
-  max-width: 80%;
+#container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#introText {
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 0%;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: #0c4345;
 }
 
 #nmImage {
-  flex-basis: 40%;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-left: 60px;
+  border: inset;
+  margin-right: 10px;
 }
 
-.introText {
-  font-size: 40px;
+#introPar {
+  margin-right: 40px;
+  font-size: 20px;
+  color: #097a6f;
+  margin-top: 60px;
+}
+
+#introH1 {
+  margin-bottom: 60px;
+  font-size: 3em;
+  margin-right: 50px;
+}
+
+#inside {
+  margin-right: 60px;
+  background-color: #021452;
+  height: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  #nmImage {
+    position: absolute;
+    top: -50px;
+    width: 70%;
+    border: unset;
+    margin-top: 0%;
+  }
+  #introH1 {
+    margin-top: 250px;
+  }
 }
