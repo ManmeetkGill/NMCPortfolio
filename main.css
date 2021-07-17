@@ -4,8 +4,42 @@ body {
   background-image: url("https://www.wallpapertip.com/wmimgs/28-285060_blue-mountain-theme-folder-tanjim-zip.jpg");
   margin: 0px;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  width: 100%;
+  background-color: #021452;
+}
+
+li {
+  width: 25%;
+  float: left;
+  list-style-type: none;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  width: 80%;
+  background: #021452;
+  padding: 8% 25%;
+  font-size: 1.35em;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+li a:hover {
+  background-color: #0a98ab;
+}
+/*
 .nav {
-  /*Stops scroll bars from appearing*/
+  /*Stops scroll bars from appearing
   width: 100vw;
   overflow: hidden;
   background-color: #021452;
@@ -33,9 +67,10 @@ body {
 .nav a.active {
   background-color: #0a98ab;
 }
+*/
 #topLine {
   height: 5px;
-  width: 90%;
+  width: 100%;
   background-color: #021452;
   border-radius: 5px;
   margin-top: 80px;
@@ -43,7 +78,7 @@ body {
 
 #bottomLine {
   height: 5px;
-  width: 90%;
+  width: 100%;
   background-color: #021452;
   border-radius: 5px;
   margin-top: 15px;
@@ -102,5 +137,41 @@ body {
   }
   #introH1 {
     margin-top: 250px;
+  }
+
+  #menu {
+    width: 1.5em;
+    display: block;
+
+    font-size: 2.5em;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 40%;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+
+  #navBar.js {
+    display: none;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  li a {
+    padding: 3% 25%;
+  }
+
+  li {
+    width: 100%;
+    border-right: none;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  #menu {
+    display: none;
   }
 }
