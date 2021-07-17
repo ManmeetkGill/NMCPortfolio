@@ -1,6 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
-html {
+body {
+  background-image: url("https://www.wallpapertip.com/wmimgs/28-285060_blue-mountain-theme-folder-tanjim-zip.jpg");
+  margin: 0px;
+}
+.nav {
+  /*Stops scroll bars from appearing*/
+  width: 100vw;
+  overflow: hidden;
+  background-color: #021452;
+  border-radius: 20px;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav a {
+  width: 20%;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 30px 125px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #0a98ab;
+}
+
+.nav a.active {
+  background-color: #0a98ab;
 }
 #topLine {
   height: 5px;
@@ -30,21 +61,22 @@ html {
   font-size: 1.5em;
   text-align: center;
   font-family: "Roboto Slab", serif;
-  color: #0c4345;
+  color: whitesmoke;
+  text-shadow: 3px 3px #0e1d26;
 }
 
 #nmImage {
   border-radius: 20px;
   margin-top: 5px;
   margin-left: 60px;
-  border: inset;
+  border: inset #0c4345;
   margin-right: 10px;
 }
 
 #introPar {
   margin-right: 40px;
   font-size: 20px;
-  color: #097a6f;
+  color: whitesmoke;
   margin-top: 60px;
 }
 
@@ -60,7 +92,7 @@ html {
   height: 2px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   #nmImage {
     position: absolute;
     top: -50px;
