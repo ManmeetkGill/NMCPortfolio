@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!--
     <div class="nav">
         <a class="active" href = "#home">Home</a>
         <a href="#about">About</a>
@@ -17,6 +18,13 @@
         <a href="#contact">Contact</a>
 
     </div>
+    -->
+    <ul id="navBar">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
     <br>
     <br>
     <br>
@@ -34,6 +42,18 @@
         </div>
     </div>
     <hr id="bottomLine">
+
+    <script>
+        $("#navBar").addClass("js").before('<div id="menu">&#9776;</div>');
+        $("#menu").click(function () {
+            $("#navBar").toggle();
+        });
+        $(window).resize(function () {
+            if (window.innerWidth > 1150) {
+                $("#navBar").removeAttr("style");
+            }
+        });
+    </script>
 
 </body>
 
