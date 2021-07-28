@@ -2,7 +2,7 @@
 .square {
   margin-left: 5%;
   margin-right: 5%;
-  height: 100vh;
+  height: 75vh;
   margin-top: 2rem;
   margin-bottom: 2 rem;
   background-color: rgba(0, 0, 0, 0.65);
@@ -46,11 +46,6 @@ h3 {
   width: 25rem;
   border-radius: 10%;
   background-color: rgba(0, 0, 0, 0.2);
-  /* background-image: linear-gradient(
-    to bottom,
-    rgba(115, 17, 30, 0.8),
-    rgba(0, 0, 0, 0.2)
-  ); */
   box-shadow: 5px 5px 50px rgba(255, 0, 0, 0.5);
 }
 
@@ -108,7 +103,30 @@ h3 {
 }
 
 @media only screen and (max-width: 1274px) {
+  .contain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  .smallSquare {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .contain2 {
+    position: relative;
+    margin: auto;
+  }
+
+  .intro {
+    margin-top: 4px;
+  }
+  .square {
+    height: 100vh;
+  }
 }
+
 /*
 .about-wrapper {
   height: 50vh;
