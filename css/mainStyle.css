@@ -83,6 +83,9 @@ nav ul li:nth-child(3) {
 nav ul li:nth-child(4) {
   animation-delay: 1.5s;
 }
+nav ul li:nth-child(5) {
+  animation-delay: 2s;
+}
 /* End of separation between child */
 
 nav ul li a {

@@ -18,3 +18,7 @@
     transform: translateY(0);
   }
 }
+
+.current {
+  color: red;
+}
