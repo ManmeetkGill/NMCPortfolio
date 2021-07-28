@@ -145,3 +145,9 @@ nav ul li a:hover::after {
     transform: translateX(0);
   }
 }
+
+@media only screen and (max-width: 1274px) {
+  body {
+    height: 125vh;
+  }
+}
